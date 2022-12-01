@@ -1,0 +1,22 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Listar usuários </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Id do Item</th>
+        <th>Id do Usuario</th>
+        <th>Deletar</th>
+      </tr>
+      <tr *ngFor="let inventario of inventario">
+        <td>{{ inventario.id }}</td>
+        <td>{{ inventario.itemId }}</td>
+        <td>{{ inventario.usuarioId }}</td>        <td>
+          <button (click)="deletar(inventario.id!)">Deletar</button>
+        </td>
+      </tr>      
+    </table>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,29 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Listar usuários </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>Jogo</th>
+        <th>Deletar</th>
+      </tr>
+      <tr *ngFor="let itens of itens">
+        <td>{{ itens.id }}</td>
+        <td>{{ itens.nome }}</td>
+        <td>{{ itens.categoria }}</td>
+        <td>{{ itens.descricao }}</td>
+        <td>{{ itens.preco }}</td>
+        <td>{{ itens.jogo }}</td>
+        <td>
+          <button (click)="deletar(itens.id!)">Deletar</button>
+        </td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>

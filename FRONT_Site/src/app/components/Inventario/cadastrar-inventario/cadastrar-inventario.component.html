@@ -1,0 +1,22 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>Cadastrar Inventario</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field class="input" id="itemId">
+      <mat-label for="nome">Id item:</mat-label>
+      <input matInput type="text" name="itemId" [(ngModel)]="itemId" />
+    </mat-form-field>
+    <mat-form-field class="input" id="usuarioId">
+      <mat-label for="usuarioId">Id user:</mat-label>
+      <input matInput type="text" name="usuarioId" [(ngModel)]="usuarioId" />
+    </mat-form-field>
+  </mat-card-content>
+
+  <button mat-raised-button color="warn" id="btnCadastrarI2" (click)="cadastrar()">
+    Cadastrar Invetario
+  </button>
+  <button mat-raised-button color="warn" id="btnAlterar" (click)="alterar()">
+    Alterar
+  </button>
+</mat-card>

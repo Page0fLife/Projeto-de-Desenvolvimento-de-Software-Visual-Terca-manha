@@ -1,0 +1,31 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>Cadastrar Item</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field class="input" id="nome">
+      <mat-label for="nome">Nome:</mat-label>
+      <input matInput type="text" name="nome" [(ngModel)]="nome" />
+    </mat-form-field>
+    <mat-form-field class="input" id="categoria">
+      <mat-label for="categoria">Categoria:</mat-label>
+      <input matInput type="text" name="categoria" [(ngModel)]="categoria" />
+    </mat-form-field>
+    <mat-form-field class="input" id="descriçao">
+      <mat-label for="descricao">Descrição:</mat-label>
+      <input matInput type="text" name="descricao" [(ngModel)]="descricao" />
+    </mat-form-field>
+    <mat-form-field class="input" id="preco">
+      <mat-label for="preco">Preço:</mat-label>
+      <input matInput type="text" name="preco" [(ngModel)]="preco" />
+    </mat-form-field>
+    <mat-form-field class="input" id="jogo">
+      <mat-label for="jogo">Jogo:</mat-label>
+      <input matInput type="text" name="jogo" [(ngModel)]="jogo" />
+    </mat-form-field>
+  </mat-card-content>
+
+  <button mat-raised-button color="warn" id="btnCadastrarI" (click)="cadastrar()">
+    Cadastrar Item
+  </button>
+</mat-card>
